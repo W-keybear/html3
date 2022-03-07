@@ -1,0 +1,68 @@
+<html> 
+  <head>
+  <title>Hi man</title>
+  <meta charset="utf-8">
+  </head>
+  <body> 
+    <button onclick="minusonehundred()">-100</button>
+    <button onclick="plusonehundred()">+100</button>
+    <button onclick="minusthen()">-10</button>
+    <button onclick="plusthen()">+10</button>
+    <button onclick="reset()">RESET</button>
+    <button onclick="plus()">+</button>
+    <button onclick="minus()">-</button>
+    <p1 id = "clickee"></p1>
+	<script>
+var clickee = 0;
+let boo;
+function minusonehundred() {
+  console.log("-100");
+    clickee -= 100;
+    document.getElementById("clickee").innerHTML = clickee;
+    console.log(clickee);
+}
+function plusonehundred() {
+  console.log("+100");
+    clickee += 100;
+    document.getElementById("clickee").innerHTML = clickee;
+    console.log(clickee);
+}
+function minusthen() {
+  console.log("-10");
+    clickee -= 10;
+    document.getElementById("clickee").innerHTML = clickee;
+    console.log(clickee);
+}
+function plusthen() {
+  console.log("+10");
+    clickee += 10;
+    document.getElementById("clickee").innerHTML = clickee;
+    console.log(clickee);
+}
+function minus() {
+    console.log("-");
+    clickee--;
+    document.getElementById("clickee").innerHTML = clickee;
+    console.log(clickee);
+}
+function plus() {
+    console.log("+");
+    clickee++;
+    document.getElementById("clickee").innerHTML = clickee;
+    console.log(clickee);
+}
+function reset() {
+    clickee = 0;
+    document.getElementById("clickee").innerHTML = clickee;
+    console.log(clickee);
+}
+
+window.addEventListener("click", function() {
+    console.log("Clicked");
+})
+window.addEventListener("scroll", function() {
+    console.log("scrolled");
+})
+</script>
+  </body>
+</html>
